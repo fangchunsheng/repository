@@ -44,28 +44,37 @@
 ### DML操作
 
 1. 插入几条记录  
-            put'member','scutshuxue','info:age','24'
-            put'member','scutshuxue','info:birthday','1987-06-17'
-            put'member','scutshuxue','info:company','alibaba'
-            put'member','scutshuxue','address:contry','china'
-            put'member','scutshuxue','address:province','zhejiang'
-            put'member','scutshuxue','address:city','hangzhou'
+
+          put'member','scutshuxue','info:age','24'
+          put'member','scutshuxue','info:birthday','1987-06-17'
+          put'member','scutshuxue','info:company','alibaba'
+          put'member','scutshuxue','address:contry','china'
+          put'member','scutshuxue','address:province','zhejiang'
+          put'member','scutshuxue','address:city','hangzhou'
 
 2. 获取一跳数据  
   +  获取一个id的所有数据
+
           get 'member','scutshuxue'
   + 获取一个id，一个列族的所有数据
+
           get 'member','scutshuxue','info'
 3. 更新一条记录
+
         put 'member','scutshuxue','info:age','99'
         get 'member','scutshuxue','info:age'
 4. 全表扫描
+
         scan 'member'
 5. 删除id为tmp的值的'info:age'字段
+
         delete 'member','tmp','info:age'
 6. 删除整行
+
         deleteall 'member','tmp'
 7. 查询表中有多少行
+
         count 'member'
 8. 将整张表清空
+
         truncate 'member'
