@@ -44,12 +44,12 @@
 ### DML操作
 
 1. 插入几条记录  
-        put'member','scutshuxue','info:age','24'
-        put'member','scutshuxue','info:birthday','1987-06-17'
-        put'member','scutshuxue','info:company','alibaba'
-        put'member','scutshuxue','address:contry','china'
-        put'member','scutshuxue','address:province','zhejiang'
-        put'member','scutshuxue','address:city','hangzhou'
+            put'member','scutshuxue','info:age','24'
+            put'member','scutshuxue','info:birthday','1987-06-17'
+            put'member','scutshuxue','info:company','alibaba'
+            put'member','scutshuxue','address:contry','china'
+            put'member','scutshuxue','address:province','zhejiang'
+            put'member','scutshuxue','address:city','hangzhou'
 
 2. 获取一跳数据  
   +  获取一个id的所有数据
