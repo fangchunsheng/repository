@@ -14,9 +14,11 @@
 
 ### 一般操作
 1. 创建一个表  
+
         create 'member','member_id','address','info'
 
 2. 获得表的描述  
+
         describe 'member'
 
 3. 删除一个列族，alter，disable，enable  
@@ -30,15 +32,19 @@
         alter'member',{NAME=>'member_id',METHOD=>'delete'}
 
 4. 列出所有表  
+
         list
 
 5. drop一个表  
+
         drop 'temp_table'
 
 6. 查询表是否存在  
+
         exists 'member'
 
 7. 判断表是否enable  
+
         is_enabled 'member'
 
 ### DML操作
