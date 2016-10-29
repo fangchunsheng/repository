@@ -1,0 +1,26 @@
+1. 为什么要吧一个方法声明为一个final呢，原因之一是防止其他人覆盖那个方法，另一个更
+重要的原因是，它可以有效地关闭动态绑定，或者告诉编译器不需要进行动态绑定，这样一来，
+编译器就可以为final方法调用生成更高效的代码。
+
+2. 接口可以包含数据成员，但它们默认都是final static的
+
+3. 普通类(分内部类)不能设置成为private或protected,只能设置成为public或者友好的
+
+4. 费static内部类，内部类的对象默认持有创建它的那个封装类的一个对象的句柄
+
+5. 继承内部类的一种特殊语法，明确给衍生类和封装类建立连接
+        class WithInner{
+          class Inner{
+
+          }
+        }
+        public class InheritInner extends WithInner.Inner{
+          public InheritInner(WithInner wi) {
+              wi.super();
+          }
+        }
+6. 在构造器内唯一能够安全调用的是在基础类中具有final属性的那些方法(也适用private方法
+，它自动具有final属性)。这些方法不会被覆盖，所以不会出现子类还没有被实例化就被调用的
+错误。
+
+7. 一条常规的设计准则：用继承表达行为间的差异，用成员变量表达状态的变化。
