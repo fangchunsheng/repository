@@ -1,3 +1,4 @@
+
 今天是光棍节，心情莫名的压抑，可能和节日有关，也可能是因为其他，whatever,反正就是心情不好（貌似心情已经好久都没好过了）。 于是就想到说去学学人家大牛，跑到leetcode、lintcode上去刷题，心中居然有些小激动，仿佛自己已经找到了通往大神的路。遂跑去两个官网，以最快的速度进行了注册，毕竟马上就要跻身大牛的行列了。接着就准备开始大战了，leetcode是英文，lintcode是中文版的，那我显然是要选择leetcode呀，毕竟逼格一下子就起来了，在leetcode上面的第一题是the two,题目描述是：  
 > Given an array of integers, return indices of the two numbers such that they add up to a specific target.  
 You may assume that each input would have exactly one solution.  
@@ -60,7 +61,7 @@ public static void partition(int[] items,int i,int j){
 项目中的问题是，一个影院在一个月的结算算过程中，可能有好几个结算对象，可能一段时间和院线1结算，一段时间和院线2结算，还有一段时间和院线3结算，那么中间有可能有空隙时间段，没有设置任何计算对象，这样的话，他的结算对象就是自己。举一个列子我要获取10.1~10.31所有结算对象，一个每个对象对应的时间段，可能9.1~10.3和院线1 10.10~10.20和院线2  10.28~11.5和院线3，我最终要获取的是：  
 
 |时间段|结算对象|
-|-|-|
+|:-:|:-:|
 |10.1~10.3|院线1|
 |10.4~10.9|影院自己|
 |10.10~10.20|院线2|
